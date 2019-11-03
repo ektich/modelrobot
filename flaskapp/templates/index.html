@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Model your robots in URDF and show them here!</title>
- 
 
 
-<script src="./scripts/qrcode.js"></script>
+
+<script src="/static/scripts/qrcode.js"></script>
 
 <script>
 {% if robot_start_id is defined %}
@@ -27,12 +27,12 @@ window.robot_id=5629499534213120;
 
 
   <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/additional.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/additional.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="lib/codemirror.css">
-    <link href="./css/ambiance_mod.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/lib/codemirror.css">
+    <link href="/static/css/ambiance_mod.css" rel="stylesheet">
 <body>
 
 <div id="controldiv">
@@ -66,7 +66,7 @@ window.robot_id=5629499534213120;
 <!--</form>-->
 Example robots:
 {% for item in linki %}
-        <a href="../testowe/{{ item[1] }}" target="_blank" class="robotlink">{{ item[0] }}</a> 
+        <a href="../testowe/{{ item[1] }}" target="_blank" class="robotlink">{{ item[0] }}</a>
     {% endfor %}
 </div>
 <div id="animdiv"><!--<form id="animform">--><div><b>Robot's poses CSV</b></div><div id="jointnames"> .</div><textarea name="animcsv" rows="2" id="robotcsv" placeholder="Place your CSV(comma seperated values) of robot's poses here"></textarea><br>
@@ -91,25 +91,25 @@ Trace trajectory of:<select id="all_links"></select><button type="button" id="tr
 <div id="container" style="float:left;width:50%">
 		</div>
 
-<script src="lib/codemirror.js"></script>
-<script src="lib/mode/xml/xml.js"></script>
-<script src="./scripts/three.min.js"></script>
-<script src="./scripts/jquery-1.9.1.js"></script>
-<script src="./scripts/jquery.xml2json.js" type="text/javascript" language="javascript"></script>
-<script src="./lib/bootstrap.min.js"></script>
-	<script src="./lib/Detector.js"></script>
-		<script src="./lib/Coordinates.js"></script>
+<script src="/static/lib/codemirror.js"></script>
+<script src="/static/lib/mode/xml/xml.js"></script>
+<script src="/static/scripts/three.min.js"></script>
+<script src="/static/scripts/jquery-1.9.1.js"></script>
+<script src="/static/scripts/jquery.xml2json.js" type="text/javascript" language="javascript"></script>
+<script src="/static/lib/bootstrap.min.js"></script>
+	<script src="/static/lib/Detector.js"></script>
+		<script src="/static/lib/Coordinates.js"></script>
 <!--		<script src="./lib/OrbitAndPanControls.js"></script>-->
-		<script src="./lib/TrackballControls.js"></script> -->
-<script src="./scripts/underscore.js"></script>
-	<script src="./scripts/backbone.js"></script>
-	<script src="./lib/dat.gui.min.js"></script>
-	<script src="./scripts/modelrobot.js"></script>
-<script src="./scripts/parserobot.js"></script>
-<script src="./lib/CSVToArray.js"></script>
+		<script src="/static/lib/TrackballControls.js"></script> -->
+<script src="/static/scripts/underscore.js"></script>
+	<script src="/static/scripts/backbone.js"></script>
+	<script src="/static/lib/dat.gui.min.js"></script>
+	<script src="/static/scripts/modelrobot.js"></script>
+<script src="/static/scripts/parserobot.js"></script>
+<script src="/static/lib/CSVToArray.js"></script>
 
 <!--<script src="./scripts/unit4-robot_arm_demo.js"></script>-->
-<script src="./scripts/scene.js"></script>
-<script src="./scripts/animate.js"></script>
+<script src="/static/scripts/scene.js"></script>
+<script src="/static/scripts/animate.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ app = Flask(__name__)
 #flask.url_for('static', filename='style.css')
 @app.route("/")
 def hello():
-    return flask.render_template('templates/index.html', )
+    return flask.render_template('index.html', )
     #return "Hello World!"
 
 @app.route("/<folder>/<nazwapliku>")
